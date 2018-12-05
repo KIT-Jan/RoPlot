@@ -8,6 +8,7 @@ import glob
 rc('text', usetex=True)													#use LaTeX
 
 def main():
+	print("Heatmap plotting...")
 	filename = GetData()
 	filename = filename[2:]
 	plotname = "Heatmap_"									
@@ -39,6 +40,9 @@ def main():
 			list_for_mean.append(i)
 	mean = np.mean(list_for_mean)
 	print("mean dose: " + str(mean) + " Gy/h")
+	g = open("Plots/Data.txt", "w")
+	g.write("max dose: " + str(max(z)) + " Gy/h\n" + "mean dose: " + str(mean) + " Gy/h")
+	print("Data saved in Plots/Data.txt")
 	
 	#Plot
 	x,y = x.astype(int), y.astype(int)
@@ -56,7 +60,7 @@ def main():
 	clb.set_label(r"\textbf{Dose (Gy/h)}", size="14")
 	plt.xlabel(r"\textbf{x Distance (mm)}", size="14")
 	plt.ylabel(r'\textbf{y Distance (mm)}', size="14")
-	plt.title("Heatmap X-Ray Tube", size="18")
+	plt.title("Heatmap with {}-Filter".format(Filter), size="18")
 	plt.gcf()
 	plt.savefig(pdfname, bbox_inches="tight")
 	plt.savefig(pngname, bbox_inches="tight")

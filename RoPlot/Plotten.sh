@@ -11,8 +11,9 @@ if [ -d Plots ]
 		mkdir Plots/Cuts/xCut
 		mkdir Plots/Cuts/yCut
 		mkdir Plots/SurfacePlot
+		echo "Verzeichnisse erstellt"
 fi
-
+echo "Start plotting"
 python 2DGauss_Beamspot_AUTO.py
 python RoPlot_Beamspot_AUTO.py
 python xSchnitt_AUTO.py

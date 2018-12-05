@@ -13,6 +13,7 @@ rc('text', usetex=True)													#use LaTeX
 
 
 def main():
+	print("yCut plotting...")
 	filename = GetData()
 	filename = filename[2:]
 	plotname = "yCut"									

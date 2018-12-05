@@ -9,6 +9,7 @@ import glob
 rc('text', usetex=True)													#use LaTeX
 
 def main():
+	print("3D/SurfacePlot plotting...")
 	filename = GetData()
 	filename = filename[2:]
 	plotname = "SurfacePlot_"									

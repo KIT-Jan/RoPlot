@@ -12,6 +12,7 @@ rc('text', usetex=True)
 import glob									
 
 def main():
+	print("2DGauss plotting...")
 	filename = GetData()
 	filename = filename[2:]
 	plotname = "2DGauss_"									
