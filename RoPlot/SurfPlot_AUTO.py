@@ -77,7 +77,7 @@ def main():
 	ax.set_xlabel(r"\textbf{x Distance (mm)}", size="10")
 	ax.set_ylabel(r'\textbf{y Distance (mm)}', size="10")
 	ax.set_zlabel(r'\textbf{Dose (Gy/h)}', size="10")
-	plt.title("3D Heatmap X-Ray", size="12")
+	plt.title("3D Heatmap {}-Filter".format(Filter), size="12")
 
 	#Angle
 	ax.view_init(35, -95)
