@@ -14,3 +14,5 @@ output/
 Resources/Settings.cfg
 Resources\Settings.cfg
 test.py
+Plots/
+Plots\
