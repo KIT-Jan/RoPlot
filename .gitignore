@@ -1,0 +1,16 @@
+*.pyc
+*.png
+*.jpg
+*.pdf
+*~
+*#
+__pycache__
+*.ui
+cfg\
+cfg/
+db.cfg
+output\
+output/
+Resources/Settings.cfg
+Resources\Settings.cfg
+test.py
