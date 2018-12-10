@@ -6,7 +6,7 @@ Script to plot the data of the ETP x-ray tube
 - Copy the datafile generated on the PC inside the irradiation lab inside the folder
 - Make sure that only one datafile (.txt or .dat) is inserted
 
-- Just run the script by double-klick or withihn the terminal/power shell
+- Just run the script by double-klick or within the terminal/power shell
 -> It will create the folders with the appropriate plots (.pdf and .png) inside
 Plots:
   - Cuts
