@@ -1,5 +1,5 @@
 # RoPlot
-Script to plot the data of the ETP x-ray tube
+Script to plot the data of the ETP x-ray tube diode scans
 
 # Use
 - Adjust the beamspot location as well as the cuts through x- and y-axis inside the PlotConfig.cfg (Dose factors can also be adjusted)
